@@ -1,8 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# FastAPI / Python environment files
+.python-version
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+.tox/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# SQLite databases
+*.db
+*.sqlite3
+
 # Dependencies
 node_modules/
 
 # Environment variables
 .env
+.env.example
+.env.production
 .env.local
 .env.*.local
 
