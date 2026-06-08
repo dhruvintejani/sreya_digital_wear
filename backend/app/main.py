@@ -162,6 +162,7 @@ allowed_origins = [
     settings.FRONTEND_URL,
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://sreya-digital-wear.vercel.app"
 ]
 
 app.add_middleware(
