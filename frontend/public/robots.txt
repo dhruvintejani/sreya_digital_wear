@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block auth pages from indexing (no value for SEO)
+Disallow: /forgot-password
+
+# Sitemap location
+Sitemap: https://sreya-digital-wear.vercel.app/sitemap.xml
