@@ -873,7 +873,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Trash2, ChevronDown, Package, ImageIcon, Factory } from 'lucide-react';
+import { Trash2, ChevronDown, Package, ImageIcon } from 'lucide-react';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { Product, LOW_STOCK_THRESHOLD } from '@/types';
@@ -891,8 +891,8 @@ interface ProductCardProps {
 export function ProductCard({
   product,
   onDelete,
-  onAddToProduction,
-  isAddingToProduction,
+  // onAddToProduction,
+  // isAddingToProduction,
   compact = false,
 }: ProductCardProps) {
   const navigate = useNavigate();
@@ -1025,7 +1025,7 @@ export function ProductCard({
             </Button>
           </div>
 
-          <Button
+          {/* <Button
             variant="outline"
             size="sm"
             className="w-full cursor-pointer"
@@ -1035,7 +1035,7 @@ export function ProductCard({
           >
             <Factory size={13} />
             Add to Production
-          </Button>
+          </Button> */}
 
           <AnimatePresence initial={false}>
             {expanded && (
